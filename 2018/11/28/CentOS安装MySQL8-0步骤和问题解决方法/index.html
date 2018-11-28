@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        CentOS安装MySQL8.0步骤和问题解决方法 - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i>  </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/">
+        </div>
+        <div class="name">
+            <i>Tony Yang</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li>
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li>
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li>
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-进入MySQL官网-打开链接-查看安装文档"><span class="toc-text">1. 进入MySQL官网 打开链接 查看安装文档</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-下载MySQL-yum包（可以理解为mysql安装器），用来执行安装mysql命令。根据服务器Linux版本选择对应版本，点击链接进入版本列表"><span class="toc-text">2. 下载MySQL yum包（可以理解为mysql安装器），用来执行安装mysql命令。根据服务器Linux版本选择对应版本，点击链接进入版本列表</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-安装yum包；需要使用命令"><span class="toc-text">3. 安装yum包；需要使用命令</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-yum包安装成功后运行包命令安装mysql服务端-该命令是运行mysql安装器，8-0版本有402M，安装时间与下载速度有很大关系"><span class="toc-text">4. yum包安装成功后运行包命令安装mysql服务端 (该命令是运行mysql安装器，8.0版本有402M，安装时间与下载速度有很大关系)</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-首次启动mysql"><span class="toc-text">5. 首次启动mysql</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-检查mysql运行状态（检测是否安装成功）"><span class="toc-text">6. 检查mysql运行状态（检测是否安装成功）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#7-修改密码。mysql安装成功后会生成一个临时密码，修改密码之前首先需要获取默认密码"><span class="toc-text">7. 修改密码。mysql安装成功后会生成一个临时密码，修改密码之前首先需要获取默认密码</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#8-Mysql授权任意地址以root的用户名进行登陆"><span class="toc-text">8. Mysql授权任意地址以root的用户名进行登陆</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input">
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i>  </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        CentOS安装MySQL8.0步骤和问题解决方法
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2018-11-28 14:31:00</span></span>
+        
+        
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+
+    </div>
+    <div class="post-content ">
+        <h6 id="1-进入MySQL官网-打开链接-查看安装文档"><a href="#1-进入MySQL官网-打开链接-查看安装文档" class="headerlink" title="1. 进入MySQL官网 打开链接 查看安装文档"></a>1. 进入MySQL官网 <a href="http://dev.mysql.com/doc/mysql-yum-repo-quick-guide" target="_blank" rel="noopener">打开链接</a> 查看安装文档</h6><h6 id="2-下载MySQL-yum包（可以理解为mysql安装器），用来执行安装mysql命令。根据服务器Linux版本选择对应版本，点击链接进入版本列表"><a href="#2-下载MySQL-yum包（可以理解为mysql安装器），用来执行安装mysql命令。根据服务器Linux版本选择对应版本，点击链接进入版本列表" class="headerlink" title="2. 下载MySQL yum包（可以理解为mysql安装器），用来执行安装mysql命令。根据服务器Linux版本选择对应版本，点击链接进入版本列表"></a>2. 下载MySQL yum包（可以理解为mysql安装器），用来执行安装mysql命令。根据服务器Linux版本选择对应版本，<a href="https://dev.mysql.com/downloads/repo/yum/" target="_blank" rel="noopener">点击链接进入版本列表</a></h6><p>2.1 复制rpm文件下载链接，直接下载到服务器缓存</p>
+<p>例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://repo.mysql.com/mysql57-community-release-el7-10.noarch.rpm</span><br></pre></td></tr></table></figure></p>
+<h6 id="3-安装yum包；需要使用命令"><a href="#3-安装yum包；需要使用命令" class="headerlink" title="3. 安装yum包；需要使用命令"></a>3. 安装yum包；需要使用命令</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rpm -Uvh <span class="string">"platform-and-version-specific-package-name"</span></span><br></pre></td></tr></table></figure>
+<p>  将 “platform-and-version-specific-package-name” 替换为你下载的rpm名</p>
+<p>  例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rpm -Uvh mysql57-community-release-el7-10.noarch.rpm</span><br></pre></td></tr></table></figure></p>
+<h6 id="4-yum包安装成功后运行包命令安装mysql服务端-该命令是运行mysql安装器，8-0版本有402M，安装时间与下载速度有很大关系"><a href="#4-yum包安装成功后运行包命令安装mysql服务端-该命令是运行mysql安装器，8-0版本有402M，安装时间与下载速度有很大关系" class="headerlink" title="4. yum包安装成功后运行包命令安装mysql服务端 (该命令是运行mysql安装器，8.0版本有402M，安装时间与下载速度有很大关系)"></a>4. yum包安装成功后运行包命令安装mysql服务端 (该命令是运行mysql安装器，8.0版本有402M，安装时间与下载速度有很大关系)</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y mysql-community-server</span><br></pre></td></tr></table></figure>
+<h6 id="5-首次启动mysql"><a href="#5-首次启动mysql" class="headerlink" title="5. 首次启动mysql"></a>5. 首次启动mysql</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysqld start</span><br></pre></td></tr></table></figure>
+<h6 id="6-检查mysql运行状态（检测是否安装成功）"><a href="#6-检查mysql运行状态（检测是否安装成功）" class="headerlink" title="6. 检查mysql运行状态（检测是否安装成功）"></a>6. 检查mysql运行状态（检测是否安装成功）</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysqld status</span><br></pre></td></tr></table></figure>
+<h6 id="7-修改密码。mysql安装成功后会生成一个临时密码，修改密码之前首先需要获取默认密码"><a href="#7-修改密码。mysql安装成功后会生成一个临时密码，修改密码之前首先需要获取默认密码" class="headerlink" title="7. 修改密码。mysql安装成功后会生成一个临时密码，修改密码之前首先需要获取默认密码"></a>7. 修改密码。mysql安装成功后会生成一个临时密码，修改密码之前首先需要获取默认密码</h6><p>7.1 获取默认密码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep <span class="string">'temporary password'</span> /var/<span class="built_in">log</span>/mysqld.log</span><br></pre></td></tr></table></figure></p>
+<p>7.2 输入临时密码登录mysql<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p</span><br></pre></td></tr></table></figure></p>
+<p>7.3 登入mysql之后才能修改密码，将’password’修改为 ‘你的密码’<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER <span class="string">'root'</span>@<span class="string">'localhost'</span> IDENTIFIED BY <span class="string">'password'</span></span><br></pre></td></tr></table></figure></p>
+<p>7.3.1 如果密码未包含字母数字和符号将会提示更改不成功，因为mysql的密码格式默认检测到不安全。如果不需要设置过于复杂，可以修改配置<br>8.0之前版本需要输入</p>
+<p>  修改复杂度<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> global validate_password_policy=0;</span><br></pre></td></tr></table></figure></p>
+<p>   修改长度<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> global validate_password_length=1;</span><br></pre></td></tr></table></figure></p>
+<p>8.0之后版本输入（可能是新版本语法和结构稍有调整吧）</p>
+<p>  修改复杂度<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> global validate_password.policy=0;</span><br></pre></td></tr></table></figure></p>
+<p>   修改长度<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> global validate_password.length=1;</span><br></pre></td></tr></table></figure></p>
+<p>7.3.2 修改配置之后再次修改密码即可成功</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER <span class="string">'root'</span>@<span class="string">'localhost'</span> IDENTIFIED BY <span class="string">'password'</span></span><br></pre></td></tr></table></figure>
+<h6 id="8-Mysql授权任意地址以root的用户名进行登陆"><a href="#8-Mysql授权任意地址以root的用户名进行登陆" class="headerlink" title="8. Mysql授权任意地址以root的用户名进行登陆"></a>8. Mysql授权任意地址以root的用户名进行登陆</h6><p>8.1 创建用户并授权<br>8.0之前版本:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GRANT ALL PRIVILEGES ON *.* TO <span class="string">'root'</span>@<span class="string">'%'</span> IDENTIFIED BY <span class="string">'password'</span> WITH GRANT OPTION;</span><br></pre></td></tr></table></figure>
+<p>8.0之后版本，因为新版的的mysql版本已经将创建账户和赋予权限的方式分开了，所以直接运行上面的命令会报语法错误，因此需要依次执行以下命令<br>第一步：创建账户<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create user <span class="string">'用户名'</span>@<span class="string">'访问主机'</span> identified by <span class="string">'密码'</span>;</span><br></pre></td></tr></table></figure></p>
+<p>第二步：赋予权限<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grant 权限列表 on 数据库 to <span class="string">'用户名'</span>@<span class="string">'访问主机'</span> ;(修改权限时在后面加with grant option)</span><br></pre></td></tr></table></figure></p>
+<p>8.2 授权结束并使配置生效<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure></p>
+<p>在使用数据库工具进行连接mysql时会出现mysql8 ：客户端连接caching-sha2-password问题，是由于虽然为mysql创建了可访问的用户名和密码但是并未设置加密方式，重新配置用户名和密码<br>并附带上加密方式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER <span class="string">'username'</span>@<span class="string">'ip_address'</span> IDENTIFIED WITH mysql_native_password BY <span class="string">'password'</span>;</span><br></pre></td></tr></table></figure></p>
+
+        
+        <br>
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>
