@@ -1,220 +1,973 @@
 <!DOCTYPE html>
-<html lang="en">
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keyword" content="">
-    <link rel="shortcut icon" href="/img/favicon.ico">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
 
-    <title>
-        
-        
-        
-    </title>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/aircloud.css">
-    <link rel="stylesheet" href="/css/gitment.css">
-    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
-    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
-    <!-- ga & ba script hoook -->
-    <script></script>
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="TonyYang的博客" type="application/atom+xml">
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="TonyYang的博客">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="TonyYang的博客">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TonyYang的博客">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+
+
+  <title>TonyYang的博客</title>
+  
+
+
+
+
+
+
+
+
 </head>
 
-<body>
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-<div class="site-nav-toggle" id="site-nav-toggle">
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">TonyYang的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
     <button>
-        <span class="btn-bar"></span>
-        <span class="btn-bar"></span>
-        <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
     </button>
+  </div>
 </div>
 
-<div class="index-about">
-    <i>  </i>
-</div>
+<nav class="site-nav">
+  
 
-<div class="index-container">
-    
-    <div class="index-left">
+  
+    <ul id="menu" class="menu">
+      
         
-<div class="nav" id="nav">
-    <div class="avatar-name">
-        <div class="avatar">
-            <img src="/">
-        </div>
-        <div class="name">
-            <i>Tony Yang</i>
-        </div>
-    </div>
-    <div class="contents" id="nav-content">
-        <ul>
-            <li class="active">
-                <a href="/">
-                    <i class="iconfont icon-shouye1"></i>
-                    <span>HOME</span>
-                </a>
-            </li>
-            <li>
-                <a href="/tags">
-                    <i class="iconfont icon-biaoqian1"></i>
-                    <span>TAGS</span>
-                </a>
-            </li>
-            <li>
-                <a href="/archives">
-                    <i class="iconfont icon-guidang2"></i>
-                    <span>ARCHIVES</span>
-                </a>
-            </li>
-            <li>
-                <a href="/about/">
-                    <i class="iconfont icon-guanyu2"></i>
-                    <span>ABOUT</span>
-                </a>
-            </li>
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
             
-            <li>
-                <a id="search">
-                    <i class="iconfont icon-sousuo1"></i>
-                    <span>SEARCH</span>
-                </a>
-            </li>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-        </ul>
-    </div>
-    
-</div>
-
-
-<div class="search-field" id="search-field">
-    <div class="search-container">
-        <div class="search-input">
-            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
-            <input id="search-input">
-            <span id="begin-search">search</span>
-        </div>
-        <div class="search-result-container" id="search-result-container">
-
-        </div>
-    </div>
-</div>
-        <div class="index-about-mobile">
-            <i>  </i>
-        </div>
-    </div>
-    
-    <div class="index-middle">
-        <!-- Main Content -->
+            首页
+          </a>
+        </li>
+      
         
-<div class="post-preview-container" style="min-height: 720px">
-    
-    <div class="post-preview">
-        <div class="post-time">2018-11-28</div>
-        <div class="post-info">
-            <a href="/2018/11/28/CentOS安装MySQL8-0步骤和问题解决方法/">
-                <h3>
-                    CentOS安装MySQL8.0步骤和问题解决方法
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-11-28</div>
-        <div class="post-info">
-            <a href="/2018/11/28/CentOS7安装iptables防火墙/">
-                <h3>
-                    CentOS7安装iptables防火墙
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#iptables" title="iptables">iptables</a>
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#centos防火墙" title="centos防火墙">centos防火墙</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-11-28</div>
-        <div class="post-info">
-            <a href="/2018/11/28/hello-world/">
-                <h3>
-                    Hello World
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-</div>
-<ul class="pager">
-    
-    
-</ul>
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
 
-    </div>
-</div>
-
-
-<footer class="footer">
-    <ul class="list-inline text-center">
-        
-        
-
-        
-
-        
-
-        
-
-        
-
+      
     </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
     
-    <p>
-        <span id="busuanzi_container_site_pv">
-            <span id="busuanzi_value_site_pv"></span>PV
-        </span>
-        <span id="busuanzi_container_site_uv">
-            <span id="busuanzi_value_site_uv"></span>UV
-        </span>
-        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
-</footer>
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/28/CentOS安装MySQL8-0步骤和问题解决方法/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tony Yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TonyYang的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/28/CentOS安装MySQL8-0步骤和问题解决方法/" itemprop="url">CentOS安装MySQL8.0步骤和问题解决方法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-28T14:31:00+08:00">
+                2018-11-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h6 id="1-进入MySQL官网-打开链接-查看安装文档"><a href="#1-进入MySQL官网-打开链接-查看安装文档" class="headerlink" title="1. 进入MySQL官网 打开链接 查看安装文档"></a>1. 进入MySQL官网 <a href="http://dev.mysql.com/doc/mysql-yum-repo-quick-guide" target="_blank" rel="noopener">打开链接</a> 查看安装文档</h6><h6 id="2-下载MySQL-yum包（可以理解为mysql安装器），用来执行安装mysql命令。根据服务器Linux版本选择对应版本，点击链接进入版本列表"><a href="#2-下载MySQL-yum包（可以理解为mysql安装器），用来执行安装mysql命令。根据服务器Linux版本选择对应版本，点击链接进入版本列表" class="headerlink" title="2. 下载MySQL yum包（可以理解为mysql安装器），用来执行安装mysql命令。根据服务器Linux版本选择对应版本，点击链接进入版本列表"></a>2. 下载MySQL yum包（可以理解为mysql安装器），用来执行安装mysql命令。根据服务器Linux版本选择对应版本，<a href="https://dev.mysql.com/downloads/repo/yum/" target="_blank" rel="noopener">点击链接进入版本列表</a></h6><p>2.1 复制rpm文件下载链接，直接下载到服务器缓存</p>
+<p>例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://repo.mysql.com/mysql57-community-release-el7-10.noarch.rpm</span><br></pre></td></tr></table></figure></p>
+<h6 id="3-安装yum包；需要使用命令"><a href="#3-安装yum包；需要使用命令" class="headerlink" title="3. 安装yum包；需要使用命令"></a>3. 安装yum包；需要使用命令</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rpm -Uvh <span class="string">"platform-and-version-specific-package-name"</span></span><br></pre></td></tr></table></figure>
+<p>  将 “platform-and-version-specific-package-name” 替换为你下载的rpm名</p>
+<p>  例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rpm -Uvh mysql57-community-release-el7-10.noarch.rpm</span><br></pre></td></tr></table></figure></p>
+<h6 id="4-yum包安装成功后运行包命令安装mysql服务端-该命令是运行mysql安装器，8-0版本有402M，安装时间与下载速度有很大关系"><a href="#4-yum包安装成功后运行包命令安装mysql服务端-该命令是运行mysql安装器，8-0版本有402M，安装时间与下载速度有很大关系" class="headerlink" title="4. yum包安装成功后运行包命令安装mysql服务端 (该命令是运行mysql安装器，8.0版本有402M，安装时间与下载速度有很大关系)"></a>4. yum包安装成功后运行包命令安装mysql服务端 (该命令是运行mysql安装器，8.0版本有402M，安装时间与下载速度有很大关系)</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y mysql-community-server</span><br></pre></td></tr></table></figure>
+<h6 id="5-首次启动mysql"><a href="#5-首次启动mysql" class="headerlink" title="5. 首次启动mysql"></a>5. 首次启动mysql</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysqld start</span><br></pre></td></tr></table></figure>
+<h6 id="6-检查mysql运行状态（检测是否安装成功）"><a href="#6-检查mysql运行状态（检测是否安装成功）" class="headerlink" title="6. 检查mysql运行状态（检测是否安装成功）"></a>6. 检查mysql运行状态（检测是否安装成功）</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysqld status</span><br></pre></td></tr></table></figure>
+<h6 id="7-修改密码。mysql安装成功后会生成一个临时密码，修改密码之前首先需要获取默认密码"><a href="#7-修改密码。mysql安装成功后会生成一个临时密码，修改密码之前首先需要获取默认密码" class="headerlink" title="7. 修改密码。mysql安装成功后会生成一个临时密码，修改密码之前首先需要获取默认密码"></a>7. 修改密码。mysql安装成功后会生成一个临时密码，修改密码之前首先需要获取默认密码</h6><p>7.1 获取默认密码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep <span class="string">'temporary password'</span> /var/<span class="built_in">log</span>/mysqld.log</span><br></pre></td></tr></table></figure></p>
+<p>7.2 输入临时密码登录mysql<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p</span><br></pre></td></tr></table></figure></p>
+<p>7.3 登入mysql之后才能修改密码，将’password’修改为 ‘你的密码’<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER <span class="string">'root'</span>@<span class="string">'localhost'</span> IDENTIFIED BY <span class="string">'password'</span></span><br></pre></td></tr></table></figure></p>
+<p>7.3.1 如果密码未包含字母数字和符号将会提示更改不成功，因为mysql的密码格式默认检测到不安全。如果不需要设置过于复杂，可以修改配置<br>8.0之前版本需要输入</p>
+<p>  修改复杂度<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> global validate_password_policy=0;</span><br></pre></td></tr></table></figure></p>
+<p>   修改长度<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> global validate_password_length=1;</span><br></pre></td></tr></table></figure></p>
+<p>8.0之后版本输入（可能是新版本语法和结构稍有调整吧）</p>
+<p>  修改复杂度<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> global validate_password.policy=0;</span><br></pre></td></tr></table></figure></p>
+<p>   修改长度<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> global validate_password.length=1;</span><br></pre></td></tr></table></figure></p>
+<p>7.3.2 修改配置之后再次修改密码即可成功</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER <span class="string">'root'</span>@<span class="string">'localhost'</span> IDENTIFIED BY <span class="string">'password'</span></span><br></pre></td></tr></table></figure>
+<h6 id="8-Mysql授权任意地址以root的用户名进行登陆"><a href="#8-Mysql授权任意地址以root的用户名进行登陆" class="headerlink" title="8. Mysql授权任意地址以root的用户名进行登陆"></a>8. Mysql授权任意地址以root的用户名进行登陆</h6><p>8.1 创建用户并授权<br>8.0之前版本:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GRANT ALL PRIVILEGES ON *.* TO <span class="string">'root'</span>@<span class="string">'%'</span> IDENTIFIED BY <span class="string">'password'</span> WITH GRANT OPTION;</span><br></pre></td></tr></table></figure>
+<p>8.0之后版本，因为新版的的mysql版本已经将创建账户和赋予权限的方式分开了，所以直接运行上面的命令会报语法错误，因此需要依次执行以下命令<br>第一步：创建账户<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create user <span class="string">'用户名'</span>@<span class="string">'访问主机'</span> identified by <span class="string">'密码'</span>;</span><br></pre></td></tr></table></figure></p>
+<p>第二步：赋予权限<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grant 权限列表 on 数据库 to <span class="string">'用户名'</span>@<span class="string">'访问主机'</span> ;(修改权限时在后面加with grant option)</span><br></pre></td></tr></table></figure></p>
+<p>8.2 授权结束并使配置生效<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure></p>
+<p>在使用数据库工具进行连接mysql时会出现mysql8 ：客户端连接caching-sha2-password问题，是由于虽然为mysql创建了可访问的用户名和密码但是并未设置加密方式，重新配置用户名和密码<br>并附带上加密方式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER <span class="string">'username'</span>@<span class="string">'ip_address'</span> IDENTIFIED WITH mysql_native_password BY <span class="string">'password'</span>;</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/28/CentOS7安装iptables防火墙/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tony Yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TonyYang的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/28/CentOS7安装iptables防火墙/" itemprop="url">CentOS7安装iptables防火墙</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-28T14:15:00+08:00">
+                2018-11-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/CentOS/" itemprop="url" rel="index">
+                    <span itemprop="name">CentOS</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/CentOS/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>CentOS7默认的防火墙不是iptables,而是firewalle.</p>
+<h5 id="一、安装iptable-iptable-service"><a href="#一、安装iptable-iptable-service" class="headerlink" title="一、安装iptable iptable-service"></a>一、安装iptable iptable-service</h5><h6 id="1-先检查是否安装了iptables"><a href="#1-先检查是否安装了iptables" class="headerlink" title="1.先检查是否安装了iptables"></a>1.先检查是否安装了iptables</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service iptables status</span><br></pre></td></tr></table></figure>
+<h6 id="2-安装iptables"><a href="#2-安装iptables" class="headerlink" title="2.安装iptables"></a>2.安装iptables</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y iptables</span><br></pre></td></tr></table></figure>
+<h6 id="3-升级iptables（安装的最新版本则不需要）"><a href="#3-升级iptables（安装的最新版本则不需要）" class="headerlink" title="3.升级iptables（安装的最新版本则不需要）"></a>3.升级iptables（安装的最新版本则不需要）</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum update iptables</span><br></pre></td></tr></table></figure>
+<h6 id="4-安装iptables-services"><a href="#4-安装iptables-services" class="headerlink" title="4.安装iptables-services"></a>4.安装iptables-services</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install iptables-services</span><br></pre></td></tr></table></figure>
+<h5 id="二、禁用-停止自带的firewalld服务"><a href="#二、禁用-停止自带的firewalld服务" class="headerlink" title="二、禁用/停止自带的firewalld服务"></a>二、禁用/停止自带的firewalld服务</h5><h6 id="1-停止firewalld服务"><a href="#1-停止firewalld服务" class="headerlink" title="1.停止firewalld服务"></a>1.停止firewalld服务</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br></pre></td></tr></table></figure>
+<h6 id="2-禁用firewalld服务"><a href="#2-禁用firewalld服务" class="headerlink" title="2.禁用firewalld服务"></a>2.禁用firewalld服务</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl mask firewalld</span><br></pre></td></tr></table></figure>
+<h6 id="3、设置现有规则"><a href="#3、设置现有规则" class="headerlink" title="3、设置现有规则"></a>3、设置现有规则</h6><p>查看iptables现有规则<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -L -n</span><br></pre></td></tr></table></figure></p>
+<p>先允许所有,不然有可能会杯具<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -P INPUT ACCEPT</span><br></pre></td></tr></table></figure></p>
+<p>清空所有默认规则<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -F</span><br></pre></td></tr></table></figure></p>
+<p>清空所有自定义规则<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -X</span><br></pre></td></tr></table></figure></p>
+<p>所有计数器归0<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -Z</span><br></pre></td></tr></table></figure></p>
+<p>允许来自于lo接口的数据包(本地访问)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -i lo -j ACCEPT</span><br></pre></td></tr></table></figure></p>
+<p>开放22端口<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -p tcp --dport 22 -j ACCEPT</span><br></pre></td></tr></table></figure></p>
+<p>开放21端口(FTP)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -p tcp --dport 21 -j ACCEPT</span><br></pre></td></tr></table></figure></p>
+<p>开放80端口(HTTP)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -p tcp --dport 80 -j ACCEPT</span><br></pre></td></tr></table></figure></p>
+<p>开放443端口(HTTPS)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -p tcp --dport 443 -j ACCEPT</span><br></pre></td></tr></table></figure></p>
+<p>允许ping<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -p icmp --icmp-type 8 -j ACCEPT</span><br></pre></td></tr></table></figure></p>
+<p>允许接受本机请求之后的返回数据 RELATED,是为FTP设置的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -m state --state  RELATED,ESTABLISHED -j ACCEPT</span><br></pre></td></tr></table></figure></p>
+<p>其他入站一律丢弃<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -P INPUT DROP</span><br></pre></td></tr></table></figure></p>
+<p>所有出站一律绿灯<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -P OUTPUT ACCEPT</span><br></pre></td></tr></table></figure></p>
+<p>所有转发一律丢弃<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -P FORWARD DROP</span><br></pre></td></tr></table></figure></p>
+<p>4、其他规则设定</p>
+<p>#如果要添加内网ip信任（接受其所有TCP请求）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -p tcp -s 45.96.174.68 -j ACCEPT</span><br></pre></td></tr></table></figure></p>
+<p> 过滤所有非以上规则的请求<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -P INPUT DROP</span><br></pre></td></tr></table></figure></p>
+<p>要封停一个IP，使用下面这条命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -I INPUT -s ***.***.***.*** -j DROP</span><br></pre></td></tr></table></figure></p>
+<p>要解封一个IP，使用下面这条命令:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -D INPUT -s ***.***.***.*** -j DROP</span><br></pre></td></tr></table></figure></p>
+<p>5、保存规则设定</p>
+<p>#保存上述规则<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service iptables save</span><br></pre></td></tr></table></figure></p>
+<p>6、开启iptables服务<br>注册iptables服务，相当于以前的  <figure class="highlight plain"><figcaption><span>iptables on ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```bash</span><br><span class="line">	systemctl enable iptables.service</span><br></pre></td></tr></table></figure></p>
+<p>开启服务<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start iptables.service</span><br></pre></td></tr></table></figure></p>
+<p>查看状态<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status iptables.service</span><br></pre></td></tr></table></figure></p>
+<p>7、映射端口（如将mysql默认的3306端口映射成1306对外提供服务）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -t mangle -I PREROUTING -p tcp --dport 1306 -j MARK --<span class="built_in">set</span>-mark 883306</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -t nat -I PREROUTING -p tcp --dport 1306 -j REDIRECT --to-ports 3306</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -I INPUT -p tcp --dport 3306 -m mark --mark 883306 -j ACCEPT</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/28/hello-world/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tony Yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TonyYang的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/28/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-28T14:09:32+08:00">
+                2018-11-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Tony Yang</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tony Yang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
 
 </body>
-
-<script>
-    // We expose some of the variables needed by the front end
-    window.hexo_search_path = "search.json"
-    window.hexo_root = "/"
-    window.isPost = false
-</script>
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
 </html>
